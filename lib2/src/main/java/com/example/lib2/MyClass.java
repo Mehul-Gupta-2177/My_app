@@ -73,7 +73,7 @@ class Arithmetic
     }
 }
 // this becomes a sub class and Arithmetic becomes super class
- class Arithmetic_2 extends Arithmetic
+ class Arithmetic_2 extends Arithmetic // ,"Another_Class_name" also adds another class
 {
     // when calling a constructor, the sub class constructor
     // also calls the super classes constructor
