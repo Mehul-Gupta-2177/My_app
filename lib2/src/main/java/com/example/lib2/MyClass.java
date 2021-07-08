@@ -29,6 +29,10 @@ class Arithmetic
 
     // multiple constructors with same name should have different parameters
     // to do Constructor Overloading
+    public Arithmetic()
+    {
+
+    }
     public Arithmetic(int a, int b)
     {
         num = a;
@@ -68,8 +72,44 @@ class Arithmetic
         return sum;
     }
 }
+// this becomes a sub class and Arithmetic becomes super class
+ class Arithmetic_2 extends Arithmetic
+{
 
+    public Arithmetic_2(int a, int b) {
+        super(a, b);
+    }
 
+    public Arithmetic_2() {
+
+    }
+
+    public int sub(int i, int j) // variable length args
+    {
+
+           int sum = i - j;
+
+        return sum;
+    }
+}
+
+class Arithmetic_3 extends Arithmetic_2 // sub of arithmetic_2, multilvl inheritance
+{
+    public Arithmetic_3(int a, int b) {
+        super(a, b);
+    }
+    public Arithmetic_3() {
+
+    }
+    public int multi(int i, int j) // variable length args
+    {
+
+        int sum = i * j;
+
+        return sum;
+    }
+
+}
 public class MyClass {
 
     static int k = 20;
@@ -133,6 +173,17 @@ public class MyClass {
 
         // enhanced for loop test
         System.out.println(Arithmetic.add(1, 2, 3, 4, 5, 6, 7));
+
+        // Inheritance
+        Arithmetic_2 Obj3 = new Arithmetic_2();
+        System.out.println( Obj3.sub(5,6));
+        System.out.println( Obj3.add(5,6));
+
+        System.out.print("\n");
+        // Multilvl Inheritance
+
+        Arithmetic_3 Obj4 = new Arithmetic_3();
+        System.out.println( Obj4.multi(5,6));
     }
 
 }
