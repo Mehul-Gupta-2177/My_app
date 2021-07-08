@@ -75,7 +75,9 @@ class Arithmetic
 // this becomes a sub class and Arithmetic becomes super class
  class Arithmetic_2 extends Arithmetic
 {
-
+    // when calling a constructor, the sub class constructor
+    // also calls the super classes constructor
+    // hence the need to give 2 different kinds fo constructors
     public Arithmetic_2(int a, int b) {
         super(a, b);
     }
@@ -84,7 +86,7 @@ class Arithmetic
 
     }
 
-    public int sub(int i, int j) // variable length args
+    public int sub(int i, int j)
     {
 
            int sum = i - j;
@@ -101,7 +103,7 @@ class Arithmetic_3 extends Arithmetic_2 // sub of arithmetic_2, multilvl inherit
     public Arithmetic_3() {
 
     }
-    public int multi(int i, int j) // variable length args
+    public int multi(int i, int j)
     {
 
         int sum = i * j;
