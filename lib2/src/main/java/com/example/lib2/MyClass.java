@@ -84,12 +84,16 @@ class Arithmetic
     // when calling a constructor, the sub class constructor
     // also calls the super classes constructor
     // hence the need to give 2 different kinds fo constructors
+    int num;
     public Arithmetic_2(int a, int b) {
         super(a, b);
     }
 
     public Arithmetic_2() {
-
+        // super.something is used to add things to the super
+        // class variables
+            num = 5;
+            super.num = 8;
     }
 
     public int sub(int i, int j)
