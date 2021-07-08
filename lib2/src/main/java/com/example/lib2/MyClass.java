@@ -74,6 +74,12 @@ class Arithmetic
 }
 // this becomes a sub class and Arithmetic becomes super class
  class Arithmetic_2 extends Arithmetic // ,"Another_Class_name" also adds another class
+    /*
+    Note: JAVA doesnt support multi inheritance directly, which means that if 2 classes
+    that  are super classes have the same function name and parameters, it will not know
+    what it needs to operate, hence making an ambiguity unless the method is also
+    in the sub class in which case it causes method overriding
+     */
 {
     // when calling a constructor, the sub class constructor
     // also calls the super classes constructor
