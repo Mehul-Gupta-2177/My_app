@@ -190,6 +190,7 @@ public class MyClass {
         Arithmetic_2 Obj3 = new Arithmetic_2();
         System.out.println( Obj3.sub(5,6));
         System.out.println( Obj3.add(5,6));
+        System.out.println( Obj3.add(8,9));
 
         System.out.print("\n");
         // Multilvl Inheritance
