@@ -174,7 +174,7 @@ public class MyClass {
         // ROW, COLUMN -> height,width
         // 2d array
         // if number of columns are not fixed its called jagged arrays
-        int numbers_2d[][] = {
+        int numbers_2d[][] =  {
                                 {1, 2, 3, 4},
                                 {5, 6, 7, 8}
                               };
