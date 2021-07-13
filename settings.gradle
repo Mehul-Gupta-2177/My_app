@@ -1,3 +1,6 @@
 rootProject.name = "My Application"
 include ':app'
 include ':lib2'
+include ':myapplication'
+include ':myapplication2'
+include ':myapplication3'
